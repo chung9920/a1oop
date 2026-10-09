@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 
 public class Employee
 {
@@ -16,43 +14,13 @@ public class Employee
     }
 }
 
-public class EmployeeManager
+// Structured-programming data record. Procedures stay outside this struct.
+public struct EmployeeManager
 {
-    private List<Employee> employees = new List<Employee>();
+    public List<Employee> Employees;
 
-    public void AddEmployee(Employee employee)
+    public EmployeeManager()
     {
-        if (employee == null)
-            throw new ArgumentNullException(nameof(employee));
-
-        employees.Add(employee);
-    }
-
-    public Employee SearchEmployee(string name)
-    {
-        return employees.FirstOrDefault(e => e.Name == name);
-    }
-
-    public bool RemoveEmployee(string name)
-    {
-        Employee employeeToRemove = SearchEmployee(name);
-        if (employeeToRemove == null)
-            return false;
-
-        return employees.Remove(employeeToRemove);
-    }
-
-    public void DisplayAllEmployees()
-    {
-        if (employees.Count == 0)
-        {
-            Console.WriteLine("No employees available.");
-            return;
-        }
-
-        foreach (Employee employee in employees)
-        {
-            Console.WriteLine($"{employee.Name}, Age: {employee.Age}, Position: {employee.Position}");
-        }
+        Employees = new List<Employee>();
     }
 }
