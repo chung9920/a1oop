@@ -1,51 +1,51 @@
 # EmployeeManagerOOP
 
-Small .NET 8 console example comparing object-oriented and structured programming styles for employee management.
+Ví dụ console nhỏ bằng .NET 8, minh họa sự khác nhau giữa lập trình hướng đối tượng và lập trình có cấu trúc trong quản lý nhân viên.
 
-## Requirements
+## Yêu cầu
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- Git, if cloning the repository
+- Git, nếu clone repository
 
-Check installation:
+Kiểm tra cài đặt:
 
 ```bash
 dotnet --version
 git --version
 ```
 
-## Setup
+## Cài đặt
 
-Clone repository and enter project directory:
+Clone repository và đi tới thư mục project:
 
 ```bash
 git clone https://github.com/chung9920/a1oop.git
 cd a1oop/OOP/EmployeeManagerOOP
 ```
 
-Restore dependencies and build:
+Khôi phục dependencies và build project:
 
 ```bash
 dotnet restore
 dotnet build
 ```
 
-## Run
+## Chạy chương trình
 
 ```bash
 dotnet run
 ```
 
-Choose one option when prompted:
+Chọn một tùy chọn khi chương trình yêu cầu:
 
-1. **OOP** — `EmployeeManagerOOP` class owns employee data and operations.
-2. **Structured** — `EmployeeManager` struct stores data while separate procedures perform operations.
+1. **OOP** — class `EmployeeManagerOOP` quản lý dữ liệu và các thao tác với nhân viên.
+2. **Structured** — struct `EmployeeManager` lưu dữ liệu, các procedure bên ngoài thực hiện thao tác.
 
-Both examples add three employees, display them, search for `Jane Smith`, remove `Mike Johnson`, and display the updated list.
+Cả hai ví dụ đều thêm ba nhân viên, hiển thị danh sách, tìm `Jane Smith`, xóa `Mike Johnson`, rồi hiển thị danh sách cập nhật.
 
-## Project files
+## Các file chính
 
-- `Program.cs` — console entry point and both examples
-- `EmployeeManagerOOP.cs` — OOP manager implementation
-- `EmployeeManager.cs` — `Employee` model and structured manager data
-- `EmployeeManagerOOP.csproj` — .NET project configuration
+- `Program.cs` — điểm khởi chạy console và hai ví dụ
+- `EmployeeManagerOOP.cs` — triển khai manager theo hướng đối tượng
+- `EmployeeManager.cs` — model `Employee` và dữ liệu manager theo kiểu structured
+- `EmployeeManagerOOP.csproj` — cấu hình project .NET
