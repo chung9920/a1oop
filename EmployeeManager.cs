@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 
-public class Employee
+// Structured-programming record. Procedures stay outside this struct.
+public struct Employee
 {
     public string Name { get; set; }
     public int Age { get; set; }
@@ -14,7 +15,6 @@ public class Employee
     }
 }
 
-// Structured-programming data record. Procedures stay outside this struct.
 public struct EmployeeManager
 {
     public List<Employee> Employees;
