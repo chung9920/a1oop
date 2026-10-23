@@ -20,7 +20,7 @@ Clone repository và đi tới thư mục project:
 
 ```bash
 git clone https://github.com/chung9920/a1oop.git
-cd a1oop/OOP/EmployeeManagerOOP
+cd a1oop
 ```
 
 Khôi phục dependencies và build project:
